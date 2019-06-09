@@ -1,0 +1,8 @@
+{
+    "window.zoomLevel": 1,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.enableSmartCommit": true,
+    "jshint.options": {"esversion": 6},
+}
