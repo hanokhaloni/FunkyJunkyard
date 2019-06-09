@@ -1,0 +1,22 @@
+{
+  "name": "funkyjunkyard",
+  "version": "0.0.1",
+  "description": "A daily coding challange repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanokhaloni/FunkyJunkyard.git"
+  },
+  "author": "Hanokh Aloni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanokhaloni/FunkyJunkyard/issues"
+  },
+  "homepage": "https://github.com/hanokhaloni/FunkyJunkyard#readme",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
