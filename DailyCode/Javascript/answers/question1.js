@@ -13,6 +13,7 @@ function areTwoNumbersAddUpToK_naive(numbers, k) {
   return false;
 }
 
+//this version does it in one pass...
 function areTwoNumbersAddUpToK(numbers, k) {
   var numbersSet = new Set();
   for (i = 0; i < numbers.length; i++) {

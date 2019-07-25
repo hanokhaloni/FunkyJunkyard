@@ -17,14 +17,18 @@ function deserialize(str) {
   return arrayToTree(array);
 }
 
+var restOfArray;
+
 function arrayToTree(array) {
+  const value = array[0];
+  restOfArray = array.slice(1);
   if (array[0] == "null")
     return null;
-  var value = array[0];
-  var restOfArray = array.slice(1);
+
+
   let leftNode = arrayToTree(restOfArray);
   let rightNode = arrayToTree(restOfArray);
-  
+
   return new TreeNode(value, leftNode, rightNode);
 }
 
