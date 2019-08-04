@@ -1,0 +1,33 @@
+//You are given an array of non-negative integers that represents a two-dimensional elevation map where each element is unit-width wall and the integer is the height. Suppose it will rain and all spots between two walls get filled up.
+//Compute how many units of water remain trapped on the map in O(N) time and O(1) space.
+
+// For example, given the input [2, 1, 2], we can hold 1 unit of water in the middle.
+// Given the input [3, 0, 1, 3, 0, 5], we can hold 3 units in the first index, 2 in the second, and 3 in the fourth index (we cannot hold 5 since it would run off to the left), so we can trap 8 units of water.
+function getCapacity(heights) {
+  var maxHeight = 0;
+
+  var waterUnits = 0;
+  var lastPeakIndex = 0;
+  for (var i = 0; i < heights.length; i++) {
+    if (maxHeight < heights[i]) {
+      maxHeight = heights[i];
+      lastPeakIndex = i;
+    } else {
+      waterUnits = waterUnits + (maxHeight - heights[i]);
+    }
+  }
+
+  //adjust for last element, if it is lower than last known peak.
+  var lastElement = heights[heights.length - 1];
+  if (maxHeight > lastElement) {
+    waterUnits = waterUnits - ((maxHeight - lastElement) * (heights.length - 1 - lastPeakIndex));
+  }
+
+
+  return waterUnits;
+}
+
+
+if (typeof exports !== "undefined") {
+  exports.getCapacity = getCapacity;
+}

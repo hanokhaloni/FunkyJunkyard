@@ -18,5 +18,8 @@
   "homepage": "https://github.com/hanokhaloni/FunkyJunkyard#readme",
   "devDependencies": {
     "mocha": "^6.1.4"
+  },
+  "dependencies": {
+    "nyc": "^14.1.1"
   }
 }
