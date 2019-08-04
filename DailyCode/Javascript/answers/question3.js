@@ -5,7 +5,6 @@
 //         self.val = val
 //         self.left = left
 //         self.right = right
-
 function TreeNode(value, left, right) {
   this.value = value;
   this.left = left;
@@ -13,7 +12,7 @@ function TreeNode(value, left, right) {
 }
 
 function deserialize(str) {
-  var array = str.split(',');
+  const array = str.split(',');
   return arrayToTree(array);
 }
 

@@ -5,7 +5,7 @@
 // Follow-up: what if you can't use division?
 
 function productExceptCurrentIndex_naive(numbers) {
-  product = 1;
+  let product = 1;
   for (i = 0; i < numbers.length; i++) {
     product *= numbers[i];
   }
