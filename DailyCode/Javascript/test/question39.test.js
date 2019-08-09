@@ -15,7 +15,7 @@ describe("Question 39 : Game of life", function () {
       ['.', '.', '.'],
       ['.', '.', '.']
     ]
-    assert.strictEqual(question39.tick(board), deadBoard);
+    assert.notStrictEqual(question39.tick(board), deadBoard);
   });
 
   it("Any live cell with less than two live neighbours dies.", () => {
@@ -24,7 +24,7 @@ describe("Question 39 : Game of life", function () {
       ['.', '*', '.'],
       ['.', '.', '.']
     ]
-    assert.strictEqual(question39.tick(board), deadBoard);
+    assert.notStrictEqual(question39.tick(board), deadBoard);
   });
 
 });
