@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hanokhaloni/FunkyJunkyard#readme",
   "devDependencies": {
+    "eslint": "^6.1.0",
     "mocha": "^6.1.4"
   },
   "dependencies": {
