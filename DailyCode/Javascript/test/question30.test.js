@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const question30 = require("../answers/question30");
 const assert = require("assert");
 

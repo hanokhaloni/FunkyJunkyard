@@ -8,7 +8,7 @@ function getCapacity(heights) {
 
   var waterUnits = 0;
   var lastPeakIndex = 0;
-  for (var i = 0; i < heights.length; i++) {
+  for (let i = 0; i < heights.length; i++) {
     if (maxHeight < heights[i]) {
       maxHeight = heights[i];
       lastPeakIndex = i;

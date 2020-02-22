@@ -2,9 +2,10 @@
 // For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
 // Bonus: Can you do this in one pass?
 
+// eslint-disable-next-line no-unused-vars
 function areTwoNumbersAddUpToK_naive(numbers, k) {
-  for (i = 0; i < numbers.length; i++) {
-    for (j = 0; j < numbers.length; j++) {
+  for (let i = 0; i < numbers.length; i++) {
+    for (let j = 0; j < numbers.length; j++) {
       if (numbers[i] + numbers[j] === k) {
         return true;
       }
@@ -16,7 +17,7 @@ function areTwoNumbersAddUpToK_naive(numbers, k) {
 //this version does it in one pass...
 function areTwoNumbersAddUpToK(numbers, k) {
   var numbersSet = new Set();
-  for (i = 0; i < numbers.length; i++) {
+  for (let i = 0; i < numbers.length; i++) {
     if (numbersSet.has(k - numbers[i])) {
       return true;
     }

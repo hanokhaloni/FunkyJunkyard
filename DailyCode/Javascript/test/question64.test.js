@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const questionN = require("../answers/question64");
 const assert = require("assert");
 

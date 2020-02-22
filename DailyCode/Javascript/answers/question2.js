@@ -4,13 +4,14 @@
 
 // Follow-up: what if you can't use division?
 
+// eslint-disable-next-line no-unused-vars
 function productExceptCurrentIndex_naive(numbers) {
   let product = 1;
-  for (i = 0; i < numbers.length; i++) {
+  for (let i = 0; i < numbers.length; i++) {
     product *= numbers[i];
   }
   let result = [];
-  for (i = 0; i < numbers.length; i++) {
+  for (let i = 0; i < numbers.length; i++) {
     result.push(product / numbers[i]);
   }
   return result;
@@ -23,7 +24,7 @@ function mutableRotateRight(arr) {
 
 function multiplyVectors(a, b) {
   let result = [];
-  for (j = 0; j < a.length; j++) {
+  for (let j = 0; j < a.length; j++) {
     result.push(a[j] * b[j]);
   }
   return result;
@@ -40,7 +41,7 @@ function multiplyVectors(a, b) {
 function productExceptCurrentIndex(numbers) {
   let rotated = numbers;
   let result = Array(numbers.length).fill(1);
-  for (i = 0; i < numbers.length - 1; i++) {
+  for (let i = 0; i < numbers.length - 1; i++) {
     rotated = mutableRotateRight(rotated);
     result = multiplyVectors(result, rotated);
   }
