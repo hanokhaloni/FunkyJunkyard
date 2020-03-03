@@ -7,7 +7,7 @@ var deadBoard = [
   ['.', '.', '.'],
   ['.', '.', '.'],
   ['.', '.', '.']
-]
+];
 
 describe("Question 39 : Game of life", function () {
   it("No life -> no change", () => {
@@ -15,7 +15,7 @@ describe("Question 39 : Game of life", function () {
       ['.', '.', '.'],
       ['.', '.', '.'],
       ['.', '.', '.']
-    ]
+    ];
     assert.notStrictEqual(question39.tick(board), deadBoard);
   });
 
@@ -24,7 +24,7 @@ describe("Question 39 : Game of life", function () {
       ['.', '.', '.'],
       ['.', '*', '.'],
       ['.', '.', '.']
-    ]
+    ];
     assert.notStrictEqual(question39.tick(board), deadBoard);
   });
 

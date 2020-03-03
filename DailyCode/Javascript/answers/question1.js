@@ -6,7 +6,7 @@
 function areTwoNumbersAddUpToK_naive(numbers, k) {
   for (let i = 0; i < numbers.length; i++) {
     for (let j = 0; j < numbers.length; j++) {
-      if (numbers[i] + numbers[j] === k) {
+    if (numbers[i] + numbers[j] === k) {
         return true;
       }
     }
